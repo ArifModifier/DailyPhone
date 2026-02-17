@@ -1105,7 +1105,7 @@ export default function DailyPhoneLanding() {
                 <CardContent className="space-y-4">
                   <div className="p-4 bg-gradient-to-r from-[#87CEEB]/10 to-[#6BB6D6]/10 rounded-lg border border-[#87CEEB]/20">
                     <h4 className="font-semibold text-slate-800 mb-2">Telefon</h4>
-                    <p className="text-lg font-bold text-slate-800">03023320906</p>
+                    <p className="text-lg font-bold text-slate-800">03023535168</p>
                   </div>
 
                   <div className="p-4 bg-gradient-to-r from-green-500/10 to-green-600/10 rounded-lg border border-green-200">
