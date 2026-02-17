@@ -1072,7 +1072,7 @@ export default function DailyPhoneLanding() {
     <span className="text-slate-800 font-semibold">10:30 - 18:00</span>
   </div>
   <div className="flex justify-between">
-    <span className="font-semibold text-slate-800">Sonntag</span>
+    <span className="font-semibold text-slate-800">Sonntags</span>
     <span className="text-red-600 font-semibold">Geschlossen</span>
   </div>
 </div>
