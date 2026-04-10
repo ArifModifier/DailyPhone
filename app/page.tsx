@@ -386,8 +386,6 @@ const iphonePrices: any = {
       battery: ["battery"],
       backglass: ["back", "glas"], // preferiert "back", fallback "glas"
       camera: ["cam", "camera", "camglas"], // preferiert "cam", fallback "camglas"
-      charging: [], // Nicht im Preisbaum, Standardwert
-      speaker: [], // Nicht im Preisbaum, Standardwert
     };
 
     if (brand === "iphone") {
@@ -406,8 +404,8 @@ const iphonePrices: any = {
         if (priceObj[key] !== undefined) return priceObj[key];
       }
       // Fallback für charging, speaker
-      if (service === "charging") return 49;
-      if (service === "speaker") return 39;
+      if (service === "charging") return 89;
+      if (service === "speaker") return 79;
       // Sonst Standardpreis
       return 99;
     }
