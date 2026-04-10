@@ -842,14 +842,14 @@ const iphonePrices: any = {
                         <div className="mt-6 flex flex-col sm:flex-row gap-3">
                           <Button
                             className="bg-slate-800 text-white hover:bg-slate-700 flex-1 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full"
-                            onClick={() => window.open("https://wa.me/03023320906", "_blank")}
+                           onClick={() => window.open("https://www.google.com/maps/place/DailyPhone+-+Handyreparatur+Laden+in+Berlin/@52.4945341,13.3531479,17z/data=!3m1!4b1!4m6!3m5!1s0x47a85103ebfddd11:0x5ad98d095c58d8b3!8m2!3d52.4945309!4d13.3557282!16s%2Fg%2F11xmjx_cqt?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D", "_blank")}
                           >
                             <MessageCircle className="h-4 w-4 mr-2" />
-                            Jetzt per WhatsApp kontaktieren 
+                            Google Maps
                           </Button>
                           <Button
                             className="border-2 border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white flex-1 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full bg-transparent"
-                            onClick={() => scrollToSection("contact")}
+                            onClick={() => window.location.href = "tel:03023535168"}
                           >
                             <Phone className="h-4 w-4 mr-2" />
                             Anrufen
