@@ -302,8 +302,7 @@ export default function DailyPhoneLanding() {
       battery: "Akku-Wechsel",
       backglass: "Rückglas-Reparatur",
       camera: "Kamera-Reparatur",
-      charging: "Ladebuchse-Reparatur",
-      speaker: "Lautsprecher-Reparatur",
+      other: "Sonstige Reparaturen (bitte anfragen)"
     }
     return serviceNames[service] || service
   }
