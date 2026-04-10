@@ -809,6 +809,10 @@ const iphonePrices: any = {
                                 <Star className="h-4 w-4 mr-1" />
                                 12 Monate Garantie
                               </div>
+                                <div className="flex items-center">
+                                <Star className="h-4 w-4 mr-1" />
+                                Ohne Termin
+                              </div>
                             </div>
                           </div>
                           <div className="sm:text-right text-center sm:min-w-[160px]">
@@ -841,14 +845,14 @@ const iphonePrices: any = {
                             onClick={() => window.open("https://wa.me/03023320906", "_blank")}
                           >
                             <MessageCircle className="h-4 w-4 mr-2" />
-                            Jetzt per WhatsApp buchen
+                            Jetzt per WhatsApp kontaktieren 
                           </Button>
                           <Button
                             className="border-2 border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white flex-1 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full bg-transparent"
                             onClick={() => scrollToSection("contact")}
                           >
                             <Phone className="h-4 w-4 mr-2" />
-                            Termin vereinbaren
+                            Anrufen
                           </Button>
                         </div>
                       </div>
