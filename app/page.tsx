@@ -1274,9 +1274,7 @@ const iphonePrices: any = {
             <div>
               <h4 className="font-semibold mb-4 text-[#87CEEB]">Services</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li>iPhone Reparaturen</li>
-                <li>Samsung Reparaturen</li>
-                <li>Express-Service</li>
+                <li>Express-Reparaturen für alle Smartphones</li>
                 <li>Zubehör & Schutz</li>
                 <li>Handy-Ankauf</li>
               </ul>
