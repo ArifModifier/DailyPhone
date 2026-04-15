@@ -1287,7 +1287,7 @@ const iphonePrices: any = {
               <div className="space-y-2 text-gray-400 text-sm">
                 <p>Pallastraße 25, 10781 Berlin</p>
                 <p>Telefon: 03023535168</p>
-                <p>Mo-Sa: 10:30-18:00</p>
+                <p>Mo-Sa: 11-19:30</p>
                 <p>So: Geschlossen</p>
                 <p>dailyphonestore@gmail.com</p>
               </div>
