@@ -682,7 +682,7 @@ const iphonePrices: any = {
             Daily<span className="text-[#87CEEB]">Phone</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto font-light">
-            Berlins schnellster Handy-Reparaturservice ohne Termin
+            Berlin schnellste Handy-Reparaturen ohne Termin
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
@@ -868,7 +868,7 @@ const iphonePrices: any = {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">Unsere Services</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Von iPhone-Reparaturen bis hin zu Express-Service – wir haben die Lösung für Ihr Handy-Problem
+              Von iPhone-Reparaturen bis hin zu Express-Reparaturen – Sofort-Reparatur für Smartphones aller Marken
             </p>
           </div>
 
