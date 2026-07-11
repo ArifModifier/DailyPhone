@@ -19,7 +19,7 @@ export default function ImpressumPage() {
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">Kontakt</h2>
         <p>
-          Telefon: 030 23320906<br />
+          Telefon: 030 23535168<br />
           E-Mail: <a href="mailto:dailyphonestore@gmail.com" className="text-blue-600 hover:underline">dailyphonestore@gmail.com</a>
         </p>
       </section>
