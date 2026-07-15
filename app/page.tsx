@@ -1287,7 +1287,7 @@ const iphonePrices: any = {
                 <p>Telefon: 03023535168</p>
                 <p>Mo-Sa: 11-19:30</p>
                 <p>So: Geschlossen</p>
-                <p>dailyphonestore@gmail.com</p>
+                <p>info@dailyphone.de</p>
               </div>
             </div>
           </div>
