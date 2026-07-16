@@ -1122,7 +1122,7 @@ const iphonePrices: any = {
 
                   <div className="p-5 bg-gradient-to-r from-gray-100 to-gray-50 rounded-lg border border-gray-200">
                     <h4 className="font-semibold text-gray-700 mb-2">E-Mail</h4>
-                    <p className="text-sm text-gray-600 break-words">dailyphonestore@gmail.com</p>
+                    <p className="text-sm text-gray-600 break-words">info@dailyphone.de</p>
                   </div>
                 </CardContent>
               </Card>
