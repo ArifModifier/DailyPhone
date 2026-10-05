@@ -1074,7 +1074,7 @@ const iphonePrices: any = {
   </div>
   <div className="flex justify-between">
     <span className="font-semibold text-slate-800">Sonntags</span>
-    <span className="text-red-600 font-semibold">Geschlossen</span>
+    <span className="text-slate-800 font-semibold">Geschlossen</span>
   </div>
 </div>
               </CardContent>
