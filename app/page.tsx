@@ -1072,10 +1072,6 @@ const iphonePrices: any = {
     <span className="font-semibold text-slate-800">Montag - Samstag</span>
     <span className="text-slate-800 font-semibold">11:00 - 19:30</span>
   </div>
-  <div className="flex justify-between">
-    <span className="font-semibold text-slate-800">Sonntags</span>
-    <span className="text-slate-800 font-semibold">Geschlossen</span>
-  </div>
 </div>
               </CardContent>
             </Card>
