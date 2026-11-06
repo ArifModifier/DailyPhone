@@ -771,6 +771,69 @@ const iphonePrices: any = {
         </div>
       </section>
 
+      {/* Buy & Sell Section */}
+      <section className="py-20 bg-slate-800">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Kaufen <span className="text-[#87CEEB]">und</span> Verkaufen
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Ihr Partner für den Kauf und Verkauf von Smartphones in Berlin
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="relative w-fit mx-auto">
+              <img
+                src="/ankauf.png"
+                alt="Ankauf mit Smartphone und Geldschein"
+                className="w-2/4 h-auto mx-auto rounded-2xl shadow-2xl"
+              />
+              <img
+                src="/geld.png"
+                alt="Geldstück"
+                className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 animate-bounce drop-shadow-xl"
+                style={{ zIndex: 10 }}
+              />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mt-12">
+              {/* Ankauf Description */}
+              <div className="text-center">
+                <h3 className="text-3xl font-bold text-white mb-4">Ankauf</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Erstklassige Smartphones, die von unseren Experten geprüft wurden. Kaufen Sie sorgenfrei mit unserer
+                  Garantie und dem DailyPhone Care-Paket in unserem Store oder Online.
+                </p>
+                <Button
+                  className="bg-gradient-to-r from-[#87CEEB] to-[#6BB6D6] hover:from-[#6BB6D6] hover:to-[#5AA5C9] text-slate-800 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  onClick={() => scrollToSection("contact")}
+                >
+                  Smartphones kaufen
+                </Button>
+              </div>
+
+              {/* Verkauf Description */}
+              <div className="text-center">
+                <h3 className="text-3xl font-bold text-white mb-4">Verkauf</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Holen Sie das Beste aus Ihrem alten Handy heraus. Sofortiges Angebot und Cash-on-the-Spot in unserem
+                  Geschäft oder zu uns senden und ein Angebot erhalten.
+                </p>
+                <Button
+                  className="border-2 border-[#87CEEB] text-[#87CEEB] hover:bg-[#87CEEB] hover:text-slate-800 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 bg-transparent"
+                  onClick={() => window.open("https://wa.me/03023320906", "_blank")}
+                >
+                  <MessageCircle className="h-4 w-4 mr-2" />
+                  Handy verkaufen
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Interactive Price Section */}
       <section id="preise" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -925,69 +988,6 @@ const iphonePrices: any = {
                 )}
               </div>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Buy & Sell Section */}
-      <section className="py-20 bg-slate-800">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Kaufen <span className="text-[#87CEEB]">und</span> Verkaufen
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Ihr Partner für den Kauf und Verkauf von Smartphones in Berlin
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="relative w-fit mx-auto">
-              <img
-                src="/ankauf.png"
-                alt="Ankauf mit Smartphone und Geldschein"
-                className="w-2/4 h-auto mx-auto rounded-2xl shadow-2xl"
-              />
-              <img
-                src="/geld.png"
-                alt="Geldstück"
-                className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 animate-bounce drop-shadow-xl"
-                style={{ zIndex: 10 }}
-              />
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mt-12">
-              {/* Ankauf Description */}
-              <div className="text-center">
-                <h3 className="text-3xl font-bold text-white mb-4">Ankauf</h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  Erstklassige Smartphones, die von unseren Experten geprüft wurden. Kaufen Sie sorgenfrei mit unserer
-                  Garantie und dem DailyPhone Care-Paket in unserem Store oder Online.
-                </p>
-                <Button
-                  className="bg-gradient-to-r from-[#87CEEB] to-[#6BB6D6] hover:from-[#6BB6D6] hover:to-[#5AA5C9] text-slate-800 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                  onClick={() => scrollToSection("contact")}
-                >
-                  Smartphones kaufen
-                </Button>
-              </div>
-
-              {/* Verkauf Description */}
-              <div className="text-center">
-                <h3 className="text-3xl font-bold text-white mb-4">Verkauf</h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  Holen Sie das Beste aus Ihrem alten Handy heraus. Sofortiges Angebot und Cash-on-the-Spot in unserem
-                  Geschäft oder zu uns senden und ein Angebot erhalten.
-                </p>
-                <Button
-                  className="border-2 border-[#87CEEB] text-[#87CEEB] hover:bg-[#87CEEB] hover:text-slate-800 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 bg-transparent"
-                  onClick={() => window.open("https://wa.me/03023320906", "_blank")}
-                >
-                  <MessageCircle className="h-4 w-4 mr-2" />
-                  Handy verkaufen
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
