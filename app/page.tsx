@@ -694,7 +694,7 @@ const iphonePrices: any = {
             </Button>
             <Button
               className="border-2 border-[#87CEEB] text-[#87CEEB] hover:bg-[#87CEEB] hover:text-slate-800 px-8 py-4 text-lg font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 bg-transparent"
-              onClick={() => window.open("https://www.google.com/maps/dir/?api=1&destination=Pallastra%C3%9Fe%2025%2C%2010781%20Berlin&travelmode=driving", "_blank", "noopener,noreferrer")}
+              onClick={() => window.open("https://maps.app.goo.gl/YDrxtutU4pnvNXSU6", "_blank", "noopener,noreferrer")}
             >
               <MapPin className="h-5 w-5 mr-2" />
               Route berechnen
