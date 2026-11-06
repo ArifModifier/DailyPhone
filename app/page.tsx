@@ -686,20 +686,87 @@ const iphonePrices: any = {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
-
               className="bg-[#87CEEB] hover:bg-[#6BB6D6] text-slate-800 px-8 py-4 text-lg font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-              onClick={() => scrollToSection("preise")}
+              onClick={() => (window.location.href = "tel:03023535168")}
             >
-              Preise ansehen
+              <Phone className="h-5 w-5 mr-2" />
+              Anrufen
             </Button>
             <Button
-
               className="border-2 border-[#87CEEB] text-[#87CEEB] hover:bg-[#87CEEB] hover:text-slate-800 px-8 py-4 text-lg font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 bg-transparent"
-              onClick={() => window.open("https://wa.me/03023320906", "_blank")}
+              onClick={() => window.open("https://www.google.com/maps/dir/?api=1&destination=Pallastra%C3%9Fe%2025%2C%2010781%20Berlin&travelmode=driving", "_blank", "noopener,noreferrer")}
             >
-              <MessageCircle className="h-5 w-5 mr-2" />
-              WhatsApp
+              <MapPin className="h-5 w-5 mr-2" />
+              Route berechnen
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Store Information */}
+      <section id="shop" className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">Unser Shop</h2>
+            <p className="text-xl text-gray-600">Besuchen Sie uns in Berlin-Schöneberg</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <Card className="p-8 shadow-2xl bg-white border-0 hover:shadow-3xl transition-all duration-300">
+              <CardHeader className="pb-6">
+                <CardTitle className="flex items-center text-2xl text-slate-800">
+                  <MapPin className="h-6 w-6 mr-3 text-[#87CEEB]" />
+                  Adresse & Anfahrt
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-lg mb-2 text-slate-800">DailyPhone Berlin</h4>
+                  <p className="text-slate-800 font-medium">
+                    Pallastraße 25
+                    <br />
+                    10781 Berlin
+                    <br />
+                    Deutschland
+                  </p>
+                  <p className="text-sm text-[#3399CC] font-semibold mt-2">
+                    Bus 204 stops directly in front of the shop.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2 text-slate-800">Öffentliche Verkehrsmittel:</h4>
+                  <p className="text-slate-800 text-sm font-medium">
+                    U-Bahn: Kleistpark (U7)
+                    <br />
+                    Bus: M48, M85, 187, 204
+                  </p>
+                </div>
+                <Button
+                  className="w-full border-2 border-[#87CEEB] text-[#87CEEB] hover:bg-[#87CEEB] hover:text-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full bg-transparent"
+                  onClick={() => window.open("https://www.google.com/maps/place/DailyPhone+-+Handyreparatur+Laden+in+Berlin/@52.4945341,13.3531479,17z/data=!3m1!4b1!4m6!3m5!1s0x47a85103ebfddd11:0x5ad98d095c58d8b3!8m2!3d52.4945309!4d13.3557282!16s%2Fg%2F11xmjx_cqt?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D", "_blank")}
+                >
+                  <MapPin className="h-4 w-4 mr-2" />
+                  In Google Maps öffnen
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="p-8 shadow-2xl bg-white border-0 hover:shadow-3xl transition-all duration-300">
+              <CardHeader className="pb-6">
+                <CardTitle className="flex items-center text-2xl text-slate-800">
+                  <Clock className="h-6 w-6 mr-3 text-green-600" />
+                  Öffnungszeiten
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+               <div className="space-y-3">
+  <div className="flex justify-between">
+    <span className="font-semibold text-slate-800">Montag - Samstag</span>
+    <span className="text-slate-800 font-semibold">11:00 - 19:30</span>
+  </div>
+</div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -862,6 +929,69 @@ const iphonePrices: any = {
         </div>
       </section>
 
+      {/* Buy & Sell Section */}
+      <section className="py-20 bg-slate-800">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Kaufen <span className="text-[#87CEEB]">und</span> Verkaufen
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Ihr Partner für den Kauf und Verkauf von Smartphones in Berlin
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="relative w-fit mx-auto">
+              <img
+                src="/ankauf.png"
+                alt="Ankauf mit Smartphone und Geldschein"
+                className="w-2/4 h-auto mx-auto rounded-2xl shadow-2xl"
+              />
+              <img
+                src="/geld.png"
+                alt="Geldstück"
+                className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 animate-bounce drop-shadow-xl"
+                style={{ zIndex: 10 }}
+              />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mt-12">
+              {/* Ankauf Description */}
+              <div className="text-center">
+                <h3 className="text-3xl font-bold text-white mb-4">Ankauf</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Erstklassige Smartphones, die von unseren Experten geprüft wurden. Kaufen Sie sorgenfrei mit unserer
+                  Garantie und dem DailyPhone Care-Paket in unserem Store oder Online.
+                </p>
+                <Button
+                  className="bg-gradient-to-r from-[#87CEEB] to-[#6BB6D6] hover:from-[#6BB6D6] hover:to-[#5AA5C9] text-slate-800 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  onClick={() => scrollToSection("contact")}
+                >
+                  Smartphones kaufen
+                </Button>
+              </div>
+
+              {/* Verkauf Description */}
+              <div className="text-center">
+                <h3 className="text-3xl font-bold text-white mb-4">Verkauf</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  Holen Sie das Beste aus Ihrem alten Handy heraus. Sofortiges Angebot und Cash-on-the-Spot in unserem
+                  Geschäft oder zu uns senden und ein Angebot erhalten.
+                </p>
+                <Button
+                  className="border-2 border-[#87CEEB] text-[#87CEEB] hover:bg-[#87CEEB] hover:text-slate-800 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 bg-transparent"
+                  onClick={() => window.open("https://wa.me/03023320906", "_blank")}
+                >
+                  <MessageCircle className="h-4 w-4 mr-2" />
+                  Handy verkaufen
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -942,137 +1072,6 @@ const iphonePrices: any = {
                   <li>• Sofortige Bewertung</li>
                   <li>• Barzahlung möglich</li>
                 </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Buy & Sell Section */}
-      <section className="py-20 bg-slate-800">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Kaufen <span className="text-[#87CEEB]">und</span> Verkaufen
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Ihr Partner für den Kauf und Verkauf von Smartphones in Berlin
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="relative w-fit mx-auto">
-              <img
-                src="/ankauf.png"
-                alt="Ankauf mit Smartphone und Geldschein"
-                className="w-2/4 h-auto mx-auto rounded-2xl shadow-2xl"
-              />
-              <img
-                src="/geld.png"
-                alt="Geldstück"
-                className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 animate-bounce drop-shadow-xl"
-                style={{ zIndex: 10 }}
-              />
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 mt-12">
-              {/* Ankauf Description */}
-              <div className="text-center">
-                <h3 className="text-3xl font-bold text-white mb-4">Ankauf</h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  Erstklassige Smartphones, die von unseren Experten geprüft wurden. Kaufen Sie sorgenfrei mit unserer
-                  Garantie und dem DailyPhone Care-Paket in unserem Store oder Online.
-                </p>
-                <Button
-                  className="bg-gradient-to-r from-[#87CEEB] to-[#6BB6D6] hover:from-[#6BB6D6] hover:to-[#5AA5C9] text-slate-800 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                  onClick={() => scrollToSection("contact")}
-                >
-                  Smartphones kaufen
-                </Button>
-              </div>
-
-              {/* Verkauf Description */}
-              <div className="text-center">
-                <h3 className="text-3xl font-bold text-white mb-4">Verkauf</h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  Holen Sie das Beste aus Ihrem alten Handy heraus. Sofortiges Angebot und Cash-on-the-Spot in unserem
-                  Geschäft oder zu uns senden und ein Angebot erhalten.
-                </p>
-                <Button
-                  className="border-2 border-[#87CEEB] text-[#87CEEB] hover:bg-[#87CEEB] hover:text-slate-800 px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 bg-transparent"
-                  onClick={() => window.open("https://wa.me/03023320906", "_blank")}
-                >
-                  <MessageCircle className="h-4 w-4 mr-2" />
-                  Handy verkaufen
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Store Information */}
-      <section id="shop" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">Unser Shop</h2>
-            <p className="text-xl text-gray-600">Besuchen Sie uns in Berlin-Schöneberg</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <Card className="p-8 shadow-2xl bg-white border-0 hover:shadow-3xl transition-all duration-300">
-              <CardHeader className="pb-6">
-                <CardTitle className="flex items-center text-2xl text-slate-800">
-                  <MapPin className="h-6 w-6 mr-3 text-[#87CEEB]" />
-                  Adresse & Anfahrt
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-lg mb-2 text-slate-800">DailyPhone Berlin</h4>
-                  <p className="text-slate-800 font-medium">
-                    Pallastraße 25
-                    <br />
-                    10781 Berlin
-                    <br />
-                    Deutschland
-                  </p>
-                  <p className="text-sm text-[#3399CC] font-semibold mt-2">
-                    Bus 204 stops directly in front of the shop.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2 text-slate-800">Öffentliche Verkehrsmittel:</h4>
-                  <p className="text-slate-800 text-sm font-medium">
-                    U-Bahn: Kleistpark (U7)
-                    <br />
-                    Bus: M48, M85, 187, 204
-                  </p>
-                </div>
-                <Button
-                  className="w-full border-2 border-[#87CEEB] text-[#87CEEB] hover:bg-[#87CEEB] hover:text-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full bg-transparent"
-                  onClick={() => window.open("https://www.google.com/maps/place/DailyPhone+-+Handyreparatur+Laden+in+Berlin/@52.4945341,13.3531479,17z/data=!3m1!4b1!4m6!3m5!1s0x47a85103ebfddd11:0x5ad98d095c58d8b3!8m2!3d52.4945309!4d13.3557282!16s%2Fg%2F11xmjx_cqt?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D", "_blank")}
-                >
-                  <MapPin className="h-4 w-4 mr-2" />
-                  In Google Maps öffnen
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="p-8 shadow-2xl bg-white border-0 hover:shadow-3xl transition-all duration-300">
-              <CardHeader className="pb-6">
-                <CardTitle className="flex items-center text-2xl text-slate-800">
-                  <Clock className="h-6 w-6 mr-3 text-green-600" />
-                  Öffnungszeiten
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-               <div className="space-y-3">
-  <div className="flex justify-between">
-    <span className="font-semibold text-slate-800">Montag - Samstag</span>
-    <span className="text-slate-800 font-semibold">11:00 - 19:30</span>
-  </div>
-</div>
               </CardContent>
             </Card>
           </div>
